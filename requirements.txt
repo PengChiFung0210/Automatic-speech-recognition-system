@@ -1,0 +1,21 @@
+# VAD + ASR 系統依賴
+
+# 音訊處理
+pyaudio>=0.2.11
+numpy>=1.21.0
+
+# VAD (語音活動檢測)
+webrtcvad>=2.0.10
+
+# ASR (語音識別) - 推薦 faster-whisper
+faster-whisper>=0.9.0
+
+# 或者使用 openai-whisper (取消註解下面這行)
+# openai-whisper>=20230314
+
+# 配置檔案支援
+PyYAML>=6.0
+
+# 可選: GPU 加速 (取消註解下面兩行)
+# torch>=2.0.0
+# torchaudio>=2.0.0

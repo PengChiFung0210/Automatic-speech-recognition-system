@@ -1,0 +1,25 @@
+# 多語言語音識別系統配置檔案
+
+# VAD (語音活動檢測) 配置
+vad:
+  sample_rate: 16000        # 取樣率 (Hz)
+  frame_duration: 30        # 幀時長 (ms), 可選: 10, 20, 30
+  vad_mode: 3              # VAD 模式 (0-3), 3 最激進
+  energy_threshold: 500    # 能量閾值 (用於簡單 VAD)
+
+# ASR (語音識別) 配置
+asr:
+  model_size: base          # 模型: tiny, base, small, medium, large
+  language: zh              # 語言代碼: zh (普通話), yue (粵語), en (英文)
+  device: cpu               # 裝置: cpu, cuda
+  compute_type: int8        # 計算類型: int8, float16, float32
+  speech_timeout: 1         # 靜音逾時 (秒)
+  min_speech_duration: 0.5  # 最短語音時長 (秒)
+  model_path: null          # 本地模型路徑 (可選)
+  enable_language_switch: true  # 啟用語言切換功能
+
+# 除錯配置
+debug:
+  save_audio: false         # 是否儲存音訊檔案
+  audio_save_path: debug/   # 音訊儲存路徑
+  verbose: true             # 詳細輸出
