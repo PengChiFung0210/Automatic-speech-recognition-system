@@ -360,10 +360,6 @@ vtuber_service.on_action_trigger = on_action_trigger
 
 MIT License
 
-## 詳細文件
-
-查看 [USAGE.md](USAGE.md) 獲取詳細的使用方法和範例程式碼。
-
 ## 貢獻
 
 歡迎提交 Issue 和 Pull Request！
